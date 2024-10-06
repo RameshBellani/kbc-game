@@ -1,0 +1,40 @@
+/* QRCodeScreen.css */
+
+/* QR Code Section */
+.qr-section {
+    display: flex;
+    flex-direction: column; /* Stack the text and QR code vertically */
+    align-items: center; /* Center items horizontally */
+    background-color: #f9f9f9; /* Light background color */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding for spacing */
+    max-width: 400px; /* Max width for desktop */
+    width: 90%; /* Responsive width */
+    margin: 20px auto; /* Centering on the page */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* QR Code Styling */
+.qr-section canvas {
+    margin-top: 10px; /* Space above the QR code */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .qr-section {
+        padding: 15px; /* Reduce padding on mobile */
+    }
+
+    p {
+        font-size: 16px; /* Slightly smaller font size on mobile */
+        text-align: center; /* Center text on mobile */
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+    p {
+        font-size: 18px; /* Default font size for desktop */
+    }
+}

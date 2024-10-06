@@ -1,0 +1,92 @@
+/* QuestionScreen.css */
+
+/* Container for the question section */
+.question-section {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    background-color: #f7f9fc; /* Light background color for the section */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px; /* Padding for spacing */
+    max-width: 600px; /* Max width for larger screens */
+    width: 90%; /* Responsive width */
+    margin: 20px auto; /* Centering on the page */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Heading style */
+.question-section h2 {
+    font-size: 24px; /* Font size for question */
+    margin-bottom: 15px; /* Space below the question */
+    text-align: center; /* Center text */
+    color: #333; /* Darker text color */
+}
+
+/* Options List */
+.question-section ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    width: 100%; /* Full width */
+}
+
+/* Individual Option Items */
+.option-item {
+    background-color: #ffffff; /* White background for options */
+    border: 1px solid #007BFF; /* Blue border for options */
+    border-radius: 8px; /* Rounded corners */
+    margin: 10px 0; /* Margin for spacing between options */
+    padding: 15px; /* Padding for each option */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transitions */
+}
+
+/* Hover effect for options */
+.option-item:hover {
+    background-color: #e7f3ff; /* Light blue on hover */
+    border-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Input Radio Button hidden */
+.option-item input[type="radio"] {
+    display: none; /* Hide radio input */
+}
+
+/* Label for displaying selected option */
+.option-item label {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center label contents */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    width: 100%; /* Full width for clickable area */
+}
+
+/* Submit Button */
+.question-section button {
+    margin-top: 20px; /* Space above the button */
+    padding: 10px 20px; /* Padding for button */
+    font-size: 16px; /* Button font size */
+    color: white; /* Button text color */
+    background-color: #007BFF; /* Button background color */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Button hover effect */
+.question-section button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .question-section {
+        padding: 15px; /* Reduce padding on mobile */
+    }
+
+    .question-section h2 {
+        font-size: 20px; /* Slightly smaller font size on mobile */
+    }
+
+    .question-section button {
+        font-size: 14px; /* Smaller button font size on mobile */
+    }
+}
